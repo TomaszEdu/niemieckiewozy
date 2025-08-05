@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -334,22 +345,11 @@ footer {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .main-nav ul {
-    flex-direction: column; /* na telefonie nawigacja w kolumnie */
-    margin-right: 0;
-    gap: 15px;
-    padding-left: 20px; /* trochę odstępu z lewej */
-  }
-
-  .main-banner {
-    height: 60vh; /* mniejszy baner na telefonie, żeby się nie uciął */
-  }
-
   .main-banner img {
     object-fit: contain; /* żeby nie uciąć obrazu */
   }
-}
-@media (max-width: 768px) {
+
+
   .header {
     flex-direction: row; /* logo i nawigacja w rzędzie */
     justify-content: flex-start; /* wszystko do lewej */
@@ -359,25 +359,6 @@ footer {
   .logo {
     margin-right: auto; /* odsuń nawigację na prawo */
   }
-
-  .main-nav ul {
-    flex-direction: column; /* nawigacja pionowo */
-    gap: 15px;
-  }
-}
-/* Zapobiega rozszerzaniu się elementów poza ekran */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-/* Na mobile poprawka logo na lewo i pionowa nawigacja */
-@media (max-width: 768px) {
   .main-header {
     flex-direction: row;
     justify-content: flex-start;
