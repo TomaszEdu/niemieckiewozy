@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Auto-Quad Import</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-banner">
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="quady-wynajem.html">Quady Wynajem</a></li>
+                <li><a href="quady-sprzedaz.html">Quady Sprzedaż</a></li>
+                <li><a href="auta.html">Auta</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Skontaktuj się z nami</h2>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Dane kontaktowe</h3>
+                <p><strong>Telefon:</strong> +48 123 456 789</p>
+                <p><strong>E-mail:</strong> niemieckiewozy@gmail.com</p>
+                <p><strong>Adres:</strong> ul. Polna 12, 37-627 Kobylnica Ruska</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Formularz kontaktowy</h3>
+                <form action="mailto:kontakt@autoquad.pl" method="post" enctype="text/plain">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Adres e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Opcjonalnie Google Maps -->
+        <!-- <iframe src="https://www.google.com/maps/embed?..."></iframe> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Niemieckie Wozy Import. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
