@@ -365,3 +365,38 @@ footer {
     gap: 15px;
   }
 }
+/* Zapobiega rozszerzaniu się elementów poza ekran */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Na mobile poprawka logo na lewo i pionowa nawigacja */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    margin-right: 20px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    margin-right: 0;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .main-banner {
+    width: 100%; /* zamiast 100vw */
+    height: 60vh; /* jak wcześniej miałeś */
+  }
+}
