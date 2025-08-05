@@ -331,3 +331,21 @@ footer {
   background-color: #ffffff;
   color: #fff;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column; /* na telefonie nawigacja w kolumnie */
+    margin-right: 0;
+    gap: 15px;
+    padding-left: 20px; /* trochę odstępu z lewej */
+  }
+
+  .main-banner {
+    height: 60vh; /* mniejszy baner na telefonie, żeby się nie uciął */
+  }
+
+  .main-banner img {
+    object-fit: contain; /* żeby nie uciąć obrazu */
+  }
+}
