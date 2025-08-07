@@ -414,6 +414,15 @@ footer {
 
 
 }
+.tylko-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .tylko-mobile {
+    display: block;
+  }
+}
 
 
 

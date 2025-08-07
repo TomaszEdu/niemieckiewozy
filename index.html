@@ -63,8 +63,18 @@
             <!-- Dodaj kolejne auta -->
     </section>
     <section class="2-banner">
-        <img src="img/banner-2.png" alt="Baner reklamowy-2" />
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/banner_mobile-2.png">
+            <source media="(min-width: 768px)" srcset="img/banner-2.png">
+            <img src="img/banner-2.png" alt="Baner2" style="width: 100%; height: auto;">
+        </picture>
     </section>
+    <section class="tylko-mobile">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/banner_mobile-3.png">
+            <img src="img/banner_mobile-3.png" alt="Baner" style="width: 100%; height: auto;">
+        </picture>
+    </section>    
     <h2 id="naglowek">Quady na wynajem</h2>
         <section class="quad-grid">
             <div class="quad-box">
@@ -95,7 +105,18 @@
           
         </section>
         <section class="2-banner">
-            <img src="img/banner-3.png" alt="Baner reklamowy-3" />
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/banner_mobile-4.png">
+                <source media="(min-width: 768px)" srcset="img/banner-3.png">
+                <img src="img/banner-3.png" alt="Baner3" style="width: 100%; height: auto;">
+            </picture>
+        </section>
+        <section class="tylko-mobile">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/banner_mobile-5.png">
+            
+                <img src="img/banner_mobile-5.png" alt="Baner4" style="width: 100%; height: auto;">
+            </picture>
         </section>
 
         <h2 id="naglowek">Quady na sprzedaż</h2>
