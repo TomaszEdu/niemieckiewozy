@@ -374,6 +374,7 @@ footer {
     margin-right: 0;
     padding-left: 0;
     gap: 15px;
+    flex-wrap: wrap;
   }
 
   .main-banner {
