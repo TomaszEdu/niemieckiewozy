@@ -29,10 +29,28 @@
                 <p><strong>E-mail:</strong> niemieckiewozy@gmail.com</p>
                 <p><strong>Adres:</strong> ul. Polna 12, 37-627 Kobylnica Ruska</p>
             </div>
-
             <div class="contact-form">
                 <h3>Formularz kontaktowy</h3>
-                <form action="mailto:kontakt@autoquad.pl" method="post" enctype="text/plain">
+                <form action="https://formsubmit.io/send/tomaszhawrylak2@gmail.com" method="POST">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Adres e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- Redirect po wysłaniu -->
+                    <input type="hidden" name="_redirect" value="https://tomaszedu.github.io/niemieckiewozy/index.html">
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+<!--
+            <div class="contact-form">
+                <h3>Formularz kontaktowy</h3>
+                <form action="mailto:tomaszhawrylak2@gmail.com" method="post" enctype="text/plain">
                     <label for="name">Imię i nazwisko:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -44,11 +62,8 @@
 
                     <button type="submit">Wyślij</button>
                 </form>
-            </div>
+            </div> -->
         </section>
-
-        <!-- Opcjonalnie Google Maps -->
-        <!-- <iframe src="https://www.google.com/maps/embed?..."></iframe> -->
     </main>
 
     <footer>
