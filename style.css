@@ -403,5 +403,6 @@ footer {
     font-size: 12px;        /* zmniejszamy czcionkę */
     padding: 4px 6px;       /* mniejsze odstępy */
     white-space:normal;    /* zapobiega zawijaniu się tekstu wewnątrz linków */
+    flex-shrink: 1; 
   }
 }
