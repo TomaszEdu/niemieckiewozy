@@ -349,7 +349,6 @@ footer {
     object-fit: cover;
   }
 
-
   .header {
     flex-direction: row; /* logo i nawigacja w rzędzie */
     justify-content: flex-start; /* wszystko do lewej */
@@ -358,6 +357,7 @@ footer {
 
   .logo {
     margin-right: auto; /* odsuń nawigację na prawo */
+    font-size: 20px;
   }
   .main-header {
     flex-direction: row;
@@ -382,5 +382,14 @@ footer {
   .main-banner {
     
     height: 60vh; /* jak wcześniej miałeś */
+  }
+  nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
