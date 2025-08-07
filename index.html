@@ -25,8 +25,12 @@
     
 
     <section class="main-banner">
-        <img src="img/banner.png" class="baner desktop">
-        <img src="img/banner_mobile-1" class="baner mobile">
+        <picture>
+            <source media="(max-width: 767px)" srcset="img/banner_mobile.png">
+            <source media="(min-width: 768px)" srcset="img/banner.png">
+            <img src="img/banner.png" alt="Baner" style="width: 100%; height: auto;">
+        </picture>
+    
 
     </section>
     <h2 id="naglowek">Importowane samochody na sprzedaż</h2>

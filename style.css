@@ -414,33 +414,6 @@ footer {
 
 
 }
-.baner {
-width: 100%;
-height: auto;
-}
 
-/* Domyślnie mobilna wersja ukryta */
-.mobile {
-  display: none;
-}
 
-/* Desktop – ukrywa mobilny, pokazuje desktopowy */
-@media (min-width: 768px) {
-  .desktop {
-    display: block;
-  }
-  .mobile {
-    display: none;
-  }
-}
-
-/* Mobile – pokazuje mobilny, ukrywa desktopowy */
-@media (max-width: 767px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
 
