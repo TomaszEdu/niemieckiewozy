@@ -346,7 +346,8 @@ footer {
 /* Mobile responsive */
 @media (max-width: 768px) {
   .main-banner img {
-    object-fit: contain; /* żeby nie uciąć obrazu */
+    object-fit: cover;
+    object-position: center;
   }
 
 
@@ -378,6 +379,8 @@ footer {
 
   .main-banner {
     width: 100%; /* zamiast 100vw */
-    height: 60vh; /* jak wcześniej miałeś */
+    height: 100vh; /* jak wcześniej miałeś */
+    overflow: hidden;
+    position: relative;
   }
 }
