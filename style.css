@@ -412,9 +412,11 @@ footer {
     font-weight: bold;
   }
 
-  .baner {
-  width: 100%;
-  height: auto;
+
+}
+.baner {
+width: 100%;
+height: auto;
 }
 
 /* Domyślnie mobilna wersja ukryta */
@@ -442,4 +444,3 @@ footer {
   }
 }
 
-}
