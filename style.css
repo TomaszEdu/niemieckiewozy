@@ -382,12 +382,14 @@ footer {
     margin: 0;
     list-style: none;
     gap: 10px;
+    max-width: 100%; /* nie rozpycha poza ekran */
+    box-sizing: border-box;
   }
 
   .main-banner {
-    
     height: 60vh; /* jak wcześniej miałeś */
   }
+
   nav {
     display: flex;
     flex-wrap: wrap; /* pozwala na łamanie linii */
@@ -399,6 +401,6 @@ footer {
   nav a {
     font-size: 13px;        /* zmniejszamy czcionkę */
     padding: 6px 8px;       /* mniejsze odstępy */
-    white-space: nowrap;    /* zapobiega zawijaniu się tekstu wewnątrz linków */
+    white-space: normal;    /* zapobiega zawijaniu się tekstu wewnątrz linków */
   }
 }
