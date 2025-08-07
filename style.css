@@ -343,6 +343,10 @@ footer {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden; /* zabezpieczenie przed przesuwaniem całej strony w bok */
+  }
   .main-banner img {
     width: 100%; /* zamiast 100vw */
     height: 100%; /* jak wcześniej miałeś */
@@ -353,6 +357,7 @@ footer {
     flex-direction: row; /* logo i nawigacja w rzędzie */
     justify-content: flex-start; /* wszystko do lewej */
     padding: 0 20px; /* mniejsze odsunięcie */
+    overflow-x: hidden; /* jeśli nav siedzi w headerze */
   }
 
   .logo {
@@ -383,13 +388,17 @@ footer {
     
     height: 60vh; /* jak wcześniej miałeś */
   }
-  nav a {
-    font-size: 14px;
-    padding: 8px 10px;
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* pozwala na łamanie linii */
+    justify-content: center;
+    padding: 10px;
+    overflow-x: hidden; /* ukrywa nadmiar poziomy */
   }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
+  nav a {
+    font-size: 13px;        /* zmniejszamy czcionkę */
+    padding: 6px 8px;       /* mniejsze odstępy */
+    white-space: nowrap;    /* zapobiega zawijaniu się tekstu wewnątrz linków */
   }
 }
