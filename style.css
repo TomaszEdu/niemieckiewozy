@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
@@ -235,6 +235,11 @@ footer {
   right: 10px;
 }
 
+#naglowek{
+  color:#000000;
+}
+
+
 .otomoto-link {
   margin-top: 20px;
   text-align: center;
@@ -406,4 +411,35 @@ footer {
     flex-shrink: 1; 
     font-weight: bold;
   }
+
+  .baner {
+  width: 100%;
+  height: auto;
+}
+
+/* Domyślnie mobilna wersja ukryta */
+.mobile {
+  display: none;
+}
+
+/* Desktop – ukrywa mobilny, pokazuje desktopowy */
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* Mobile – pokazuje mobilny, ukrywa desktopowy */
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
 }
