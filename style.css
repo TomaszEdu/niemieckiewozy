@@ -400,8 +400,8 @@ footer {
   }
 
   nav a {
-    font-size: 13px;        /* zmniejszamy czcionkę */
-    padding: 6px 8px;       /* mniejsze odstępy */
+    font-size: 12px;        /* zmniejszamy czcionkę */
+    padding: 4px 6px;       /* mniejsze odstępy */
     white-space:normal;    /* zapobiega zawijaniu się tekstu wewnątrz linków */
   }
 }
