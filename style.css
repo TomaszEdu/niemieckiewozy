@@ -237,6 +237,8 @@ footer {
 
 #naglowek{
   color:#000000;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -329,7 +331,7 @@ footer {
 /* --- BANER --- */
 .main-banner {
   width: 100vw;
-  height: 100vh; /* cała wysokość okna przeglądarki */
+  height: auto; /* cała wysokość okna przeglądarki */
   overflow: hidden;
   position: relative;
 }
