@@ -71,7 +71,28 @@ footer {
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
     
+}
+
+.quad-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 170, 0, 0.8),
+        rgba(255, 60, 0, 0.8)
+    );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.quad-box:hover::before {
+    opacity: 1;
 }
 .quad-box:hover {
   transform: scale(1.05);
@@ -115,6 +136,15 @@ footer {
   background-color: #fff; /* lub inny kolor, np. szary */
   border-radius: 8px;
   padding: 10px;
+}
+
+.quad-box img,
+.quad-box h2,
+.quad-box h3,
+.quad-box p,
+.quad-box a {
+    position: relative;
+    z-index: 1;
 }
 .contact-container {
     display: flex;
@@ -296,6 +326,10 @@ footer {
   padding: 15px 30px;
   background-color: #000000; /* lub kolor dopasowany do logo */
   color: #fff;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-container {
